@@ -1,2 +1,244 @@
-# kruxx.github.io
-github pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CIRRA GROUP LTD</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Roboto -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(70, 200, 145, 0.25),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #064e3b 0%,
+                    #087f5b 50%,
+                    #16a66f 100%
+                );
+
+            overflow: hidden;
+        }
+
+        /* Subtle background decoration */
+
+        body::before {
+            content: "";
+            position: fixed;
+            width: 700px;
+            height: 700px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 50%;
+            right: -300px;
+            top: -150px;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            width: 850px;
+            height: 850px;
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            right: -400px;
+            top: -220px;
+        }
+
+        .landing {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .brand {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            width: 70px;
+            height: 3px;
+            background: rgba(255,255,255,0.8);
+            margin: 0 auto 30px;
+            border-radius: 10px;
+        }
+
+        .coming-soon {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: rgba(255,255,255,0.8);
+            max-width: 550px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Contact buttons */
+
+        .contact-buttons {
+            margin-top: 35px;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 22px;
+            margin: 5px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.35);
+            background: rgba(255,255,255,0.10);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            backdrop-filter: blur(5px);
+            transition: all 0.2s ease;
+        }
+
+        .contact-btn:hover {
+            background: #ffffff;
+            color: #087f5b;
+            border-color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .contact-btn i {
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 25px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: rgba(255,255,255,0.55);
+            font-size: 0.8rem;
+            font-weight: 300;
+            z-index: 2;
+        }
+
+        @media (max-width: 576px) {
+
+            .brand {
+                letter-spacing: -2px;
+            }
+
+            .message {
+                font-size: 1rem;
+            }
+
+            .contact-btn {
+                display: flex;
+                justify-content: center;
+                width: 220px;
+                margin: 8px auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="landing">
+
+        <div class="content">
+
+            <div class="brand">
+                CIRRA GROUP LTD
+            </div>
+
+            <div class="divider"></div>
+
+            <h1 class="coming-soon">
+                Coming Soon
+            </h1>
+
+            <p class="message">
+                Our new website is currently being developed.
+                Please check back soon for more information.
+            </p>
+
+            <!-- Contact Buttons -->
+
+            <div class="contact-buttons">
+
+                <a
+                    href="tel:+441234567890"
+                    class="contact-btn"
+                >
+                    <i class="bi bi-telephone-fill"></i>
+                    Call Us: +441234567890
+                </a>
+
+                <a
+                    href="mailto:Support@cirragroup.co.uk"
+                    class="contact-btn"
+                >
+                    <i class="bi bi-envelope-fill"></i>
+                    Support@cirragroup.co.uk
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        © 2026 CIRRA GROUP LTD · Company No. 17329634
+    </footer>
+
+</body>
+</html>
